@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,9 +10,8 @@
         href="https://fonts.googleapis.com/css2?family=Alumni+Sans&family=Bebas+Neue&family=Inter:wght@400;700&family=Spicy+Rice&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Prework Portfolio Page</title>
+    <title>Projects</title>
 </head>
-
 <body>
     <header id="header-wrapper">
         <nav id="navbar">
@@ -26,32 +24,33 @@
             </ul>
         </nav>
     </header>
-    <h1 class="pageName">Desirée Lagerquist</h1>
-    <h2>Hello and welcome fantastic friends!</h2>
-    <p>This is my prework Portfolio Page for the TravelPerk Academy</p>
-    <p>I am delighted and excited to share this snapshot of the skills we've
-        covered during the prework section of this new adventure</p>
-    <section>
-        <h2>Topics we're covering in prework</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Github/Git Pages</li>
-            <li>Javascript</li>
-        </ul>
-        <div id="picsumPicContainer">
-            <img class="picsumPics" src=https://picsum.photos/200/300 alt="First randomly generated image" />
-            <img class="picsumPics" src=https://picsum.photos/300/200 alt="Second randomly generated image" />
-            <img class="picsumPics" src=https://picsum.photos/200/300 alt="Third randomly generated image" />
-        </div>
-        <h2>What I'm looking forward to</h2>
-        <ul>
-            <li>Learning new things</li>
-            <li>Meeting new people</li>
-            <li>Coding new projects</li>
-        </ul>
-    </section>
-
+    <h1 class="pageName">Projects</h1>
+    <ul class="projectList">
+        <li class="projectPics">
+            <a href="https://user-repo-filterer.vercel.app/">
+                <img src="images/magnifying_glass.jpg" alt="magnifying glass with blue background" title="Magnifying glass">
+                Search your username on Github and filter your repositories
+            </a>
+        </li>
+        <li class="projectPics">
+            <a href="https://codepen.io/purpleinkpen/pen/yLGXpdV?editors=0011">
+                <img src="images/Happy_things_page.png" alt="lilac webpage with sunflowers" title="Happy things webpage">
+                A simple page for happy things
+            </a>
+        </li>
+        <li class="projectPics">
+            <a href="https://apps.apple.com/es/app/the-gallows/id1613918820">
+                <img src="images/icon_gallows.jpeg" alt="cartoon gallows" title="The Gallows">
+                The Gallows - a hangman game
+            </a>
+        </li>
+        <li class="projectPics">
+            <a href="multi_page_website/index.html">
+                <img src="images/mezcal_magic.png" alt="homepage of a mezcal bar website" title="Mezcal Magic">
+                A multi-page website about Mezcal
+            </a>
+        </li>
+    </ul>
     <footer>
         <p>Contact me, explore more of my projects, and groove to some tunes that make me move!</p>
         <a href="https://www.linkedin.com/in/desireelagerquist/" target="_blank">
@@ -62,7 +61,5 @@
         <a href="https://open.spotify.com/playlist/3gFkNTWlEdJkTaDo8twTeJ?si=869dc939140049d5" target="_blank"><img
                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEy0lEQVR4nO1Y/09bVRR/0ag/6G9++8n4R/iDmb/40wz3wsx0bhrnJPqDUWPUmKiTxZBpnOO9qsyhgykj0y1sTLaIZoM53Hi3pcDoYG1Z2YB1fGlZW9pKYfQb7THnwnSDvr7Xvtf2l36Sm5SWd9/5nPO555x7BKGMMsrQjba2rfeaeugzokx3iTJpFxkdkRgJiTJN4MLPkkyd+FudTGpEc9UGfEYoNSQLfVKSiSQy6pUYhZyWTDz4LO5RdMPrrZsel2TavOLdHA1fs0SMEqM/SZaNjxXFeIlVVouMhPUavn4RlNmOghle69x6v8RIi/GG0zURIT/juww1vuH8sw9JjPxVaOOl/84H7ZK6Nj5oiPHoDZGRzqIZz1YjwWj3vtMVD+gmUAzZSFnkpNP4yupSGS/9L6cd+adKzAylJsBIKK8Ui3m+9MbT1fNAmnIy3tTz3BOSTOK5v6wS9lu3wb7eLQafBZrIqWLzEq+w2bfm5+GY/VNgNw6Dy98DNxfGYSEehFQ6CWsRSy5CJBaAwKIbRgMMLJNHocP1NRyyvZ0PkTpNxtdC7T2iTGYybWKdOgaJ5SgYASR2efYMnLryBdT3vqjhMBOPpgYQu8pMG/zYvx0KhcRylJNpsb2jQoI+rUoAW+JMD9f3bsno/fjyEvgWJ2AyPARjc70w4uvmxqBk3CEbeCIumI/5NBFJQxpGAzJ3lkJG+kyL/k8qeaDNUQND3j+5/k9d+RIOXnyTH1wtGsaDfWT4Q+i8Vg8u/wWIJiOKRPyL1xWyET2hHgF+GSl8ajSZq6DV/gkMz56GZCq+RlJLGR0jysShRUJBrUY09L0C7c5a6J5ohP7pE1w6uNAo/Ft2t0DX2PdwdPgjLkGlfX7oexX6po/zqKTSy3y/zBEgAS0Sypr/GwdeB8fNsxCOenM6qKjv0JKHE2xz7IJvzJvW7Y3ffWfZrPhukdGYbgKT4WEwAkvJCNg8HdwhWiOuiYCahMaDfXcZEk0uwMz8CEyEBvjhRA87fedgbM4KU//YVyOVViSSTMXB5vmdy0idgCYJUWe2TfZbX4azYw2rWegNjRnoJWi9/DFccDeDNzKakVAk5ldtQURG7brSqFGraaAaLJNHeKtxJ34Zel+NgHoaxblNrgYd6H8NDl96j/dIJ0d2Q4drD68Zvw59wH9TjuY2sE61cu9fDZh5alUhsFP9DJirNqgZ3Dz4FlycaefVN1tBuo1biTBcDw1Cj/uQZtlJ+bYS2Zq522s+5gc98Eauwh+uvWDSWMW592Uyo3mal62dxoV9TiIVg9mFa2Cf7eSFB6WDlbXl0ru8Xcbi9Zvzc/h7oolnpeDS9DoigVs34LijRhsBRvYKhb/QZF/YbeKdACV1ZzNoUtN+rhcaBB/3FSgL1Vte4JHxLYzzGqAuH3pAyBV7+jc/LMlkrlAktGufBr+SKx4V8gGONEpNwGSu2C7oAQ6XSkjgoKAXTYNP3Scxcqbo0mH0nGFDXhy08oFr0YwnnYYNd+8arxdh2CUy0oRRFwqFlYNt/MhRlGlQ94HVCkxr6ClDip1M4pJMGk3nqx4Rig1esRmtU+udFNY0tge4h1BqYAOInSLObbBnx4sHv9mteDeOn/l3K7/txP/FZ4QyyihD0It/AW2YWi7tnBSYAAAAAElFTkSuQmCC"></a>
     </footer>
-
 </body>
-
 </html>
