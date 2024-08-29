@@ -1,0 +1,187 @@
+body {
+    margin: 0;
+}
+img {
+    width: 100%;
+}
+
+#bar-title {
+    color: white;
+    text-shadow:3px 2px 5px fuchsia
+}
+
+h1 {
+    text-align: center;
+    color: black;
+    font-family: georgia;
+}
+
+.top-link {
+    text-align: center;
+    font-family: helvetica;
+}
+
+.header-wrapper {
+    background-color: black;
+    padding: 0px 10px;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+    text-shadow: 2px 1px 3px fuchsia
+}
+
+#mobile-screen {
+    display: none;
+}
+
+
+@media all and (max-width: 460px) {
+    #bigscreen {
+        display: none;
+    }
+
+    #mobile-screen {
+        position: relative;
+        display: inline-block;
+    }
+
+
+    #mobile-screen span {
+        color: white;
+    }
+
+    .mobile-screen-content {
+        display: none;
+        left: 0px;
+        z-index: 1;
+    }
+
+    #mobile-screen:hover .mobile-screen-content {
+        display: block;
+        position: absolute;
+        right: 0;
+    }
+}
+
+li {
+    margin: 0px 5px;
+}
+
+.splashscreen-wrapper {
+    display:flex;
+    flex-direction: column;
+    background-image: url(./pictures/bartop_photo.jpeg);
+    background-size: cover;
+    height: calc(100vh - 67.813px);
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+iframe {
+    width: 100%;
+}
+
+#location p{
+    padding: 0px 10px;
+}
+
+#gallery-grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-flow: dense;
+    gap: 50px;
+}
+@media all and (max-width: 460px) {
+    #gallery-grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+#last-gphoto:nth-child(4) {
+    grid-column-end: span 3;
+}
+
+@media all and (max-width: 600px) {
+    #last-gphoto:nth-child(4) {
+        grid-column-end: span 2;
+    }
+}
+
+@media all and (max-width: 460px) {
+    #last-gphoto:nth-child(4) {
+        grid-column-end: span 1;
+    }
+}
+
+#mezcal-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: dense;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 150px;
+    padding: 0px 400px;
+}
+
+@media all and (max-width: 460px) {
+    #mezcal-grid-container {
+        grid-template-columns: 1fr;
+        padding: 0px 100px;
+    }
+}
+
+#mezcal-grid-container p {
+    text-align: justify;
+}
+
+.grid-item {
+    display: grid;
+    grid-auto-flow: dense;
+}
+
+.mezcal-height {
+    height: 350px;
+    width: 250px;
+}
+
+#team {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 0px 20px 20px;
+}
+
+@media all and (max-width: 600px) {
+    #team {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media all and (max-width: 460px) {
+    #team {
+        grid-template-columns: 1fr;
+    }
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 2em;
+    
+}
