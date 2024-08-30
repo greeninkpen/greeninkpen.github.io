@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #F23D5E;
+}
+header {
+    background-color: #3565F2;
+    color: #F2E30C;
+    -webkit-text-stroke: 2px #F25D27;
+    font-size: 4em;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#mainContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+p {
+    font-size: 1.5em;
+    font-family:'Courier New', Courier, monospace;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+#dogBreed {
+    margin: 2em 0;
+    min-width: 200px;
+    padding: 0.5em;
+}
+#dogPic {
+    margin: 2em 0;
+    border: 2px solid #F2E30C;
+    padding: 1em;
+    border-radius: 10px;
+    max-width: 100%;
+    max-height: 80vh; 
+}
+#loader {
+    margin: 4em auto;
+}
+@keyframes spin {
+    to {
+        transform: rotateZ(360deg);
+      }
+}
+.spin {
+    animation: spin 2s ease-in-out infinite alternate;
+    display: none;
+}
+.show {
+    display: block;
+}
+.hidden {
+    display: none;
+}
